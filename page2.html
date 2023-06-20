@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Other page</title>
+    <title>Exercício 3</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
@@ -13,7 +13,28 @@
       <a href="/page2.html" aria-current="page">Other page</a>
     </nav>
     <main>
-      <h1>Países Membros da ONU</h1>
+      <h1>Formulário de Reembolso</h1>
+      <form action="/action_page.php">
+        <label for="nmserv">Nome do Servidor*:</label>
+        <input type="text" id="nmserv" name="nomeservidor" value="John" /><br />
+        <label for="mtserv">Matrícula do Servidor*:</label>
+        <input
+          type="text"
+          id="mtserv"
+          name="matricservidor"
+          value="Doe"
+        /><br />
+        <br />
+        <fieldset>
+          <legend>Sexo*</legend>
+          <label for="ffem">Feminino:</label>
+          <input type="radio" id="ffem" name="feminino" /><br />
+          <label for="fmasc">Masculino:</label>
+          <input type="radio" id="fmasc" name="masculino" /><br />
+        </fieldset>
+        <input type="submit" value="Enviar Formulário" />
+        <input type="reset" value="Limpar Campos" />
+      </form>
     </main>
   </body>
 </html>
