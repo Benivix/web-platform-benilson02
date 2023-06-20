@@ -16,22 +16,18 @@
       <h1>Formulário de Reembolso</h1>
       <form action="/action_page.php">
         <label for="nmserv">Nome do Servidor*:</label>
-        <input type="text" id="nmserv" name="nomeservidor" value="John" /><br />
+        <input type="text" id="nmserv" name="nomeservidor" value="John" required /><br>
         <label for="mtserv">Matrícula do Servidor*:</label>
-        <input
-          type="text"
-          id="mtserv"
-          name="matricservidor"
-          value="Doe"
-        /><br />
+        <input type="text" id="mtserv" name="matricservidor" value="Doe" required /><br />
         <br />
         <fieldset>
           <legend>Sexo*</legend>
           <label for="ffem">Feminino:</label>
-          <input type="radio" id="ffem" name="feminino" /><br />
+          <input type="radio" id="ffem" name="sexo" value="feminino"/><br />
           <label for="fmasc">Masculino:</label>
-          <input type="radio" id="fmasc" name="masculino" /><br />
+          <input type="radio" id="fmasc" name="sexo" value="masculino" /><br />
         </fieldset>
+
         <input type="submit" value="Enviar Formulário" />
         <input type="reset" value="Limpar Campos" />
       </form>
