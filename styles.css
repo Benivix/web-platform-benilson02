@@ -12,7 +12,16 @@ table,
 td {
     border: 1px solid #333;
 }
-
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+}
+ol {
+  list-style-type: upper-roman;
+}
+th[scope='col'] {
+  background-color: #d7d9f2;
+}
 thead,
 tfoot {
     background-color: #333;
